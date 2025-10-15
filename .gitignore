@@ -1,0 +1,334 @@
+# ========================================
+# Meeting Summarizer - .gitignore
+# ========================================
+
+# ========================================
+# Environment Variables & API Keys
+# ========================================
+.env
+.env.local
+.env.*.local
+*.env
+.venv/
+venv/
+ENV/
+env/
+
+# ========================================
+# Python Backend
+# ========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Environments
+.venv
+venv/
+ENV/
+env/
+
+# ========================================
+# Database Files
+# ========================================
+*.db
+*.sqlite
+*.sqlite3
+meeting_history.db
+backend/meeting_history.db
+
+# Database backups
+*.db.backup
+*.sqlite.backup
+
+# ========================================
+# Uploads & Temporary Files
+# ========================================
+backend/uploads/*
+!backend/uploads/.gitkeep
+uploads/
+temp/
+tmp/
+*.tmp
+
+# Audio files (don't commit large audio files)
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.wma
+*.mp4
+*.avi
+*.mov
+
+# ========================================
+# Frontend / Node.js
+# ========================================
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+jspm_packages/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+frontend/dist/
+frontend/build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Testing
+coverage/
+.nyc_output/
+
+# Vite
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# TypeScript
+*.tsbuildinfo
+
+# ========================================
+# IDEs and Editors
+# ========================================
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ========================================
+# Logs
+# ========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ========================================
+# Runtime data
+# ========================================
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ========================================
+# Dependency directories
+# ========================================
+node_modules/
+jspm_packages/
+bower_components/
+
+# ========================================
+# Optional npm cache directory
+# ========================================
+.npm
+
+# ========================================
+# Optional REPL history
+# ========================================
+.node_repl_history
+
+# ========================================
+# Output of 'npm pack'
+# ========================================
+*.tgz
+
+# ========================================
+# Yarn
+# ========================================
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# ========================================
+# Package lock files (choose one)
+# ========================================
+# Uncomment if you want to ignore lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ========================================
+# Build artifacts
+# ========================================
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+# ========================================
+# Documentation builds
+# ========================================
+docs/_build/
+site/
+
+# ========================================
+# Backup files
+# ========================================
+*.bak
+*.backup
+*~
+
+# ========================================
+# System Files
+# ========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ========================================
+# Certificates & Keys
+# ========================================
+*.pem
+*.key
+*.cert
+*.crt
+
+# ========================================
+# Local configuration
+# ========================================
+*.local
+.local/
+local_settings.py
+
+# ========================================
+# Project specific
+# ========================================
+
+# Test audio files (keep small samples, ignore large files)
+backend/uploads/*.mp3
+backend/uploads/*.wav
+
+# Local development notes
+NOTES.md
+TODO.md
+SCRATCH.md
+
+# Personal IDE settings
+.vscode/settings.json
+
+# ========================================
+# Keep these directories but ignore contents
+# ========================================
+!backend/uploads/.gitkeep
+!frontend/dist/.gitkeep

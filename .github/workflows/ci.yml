@@ -1,0 +1,67 @@
+# Optional: GitHub Actions CI/CD Workflow
+# Uncomment and customize if you want automated testing
+
+name: CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # Backend Tests
+  backend-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install backend dependencies
+      run: |
+        cd backend
+        pip install -r requirements.txt
+    
+    # Uncomment if you have backend tests
+    # - name: Run backend tests
+    #   run: |
+    #     cd backend
+    #     python -m pytest
+
+  # Frontend Tests
+  frontend-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: Install frontend dependencies
+      run: |
+        cd frontend
+        npm ci
+    
+    - name: Run linter
+      run: |
+        cd frontend
+        npm run lint
+    
+    # Uncomment if you have frontend tests
+    # - name: Run frontend tests
+    #   run: |
+    #     cd frontend
+    #     npm test
+    
+    - name: Build frontend
+      run: |
+        cd frontend
+        npm run build
