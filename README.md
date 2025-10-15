@@ -20,6 +20,7 @@ An AI-powered meeting summarizer that transcribes audio files and generates comp
 - [Project Structure](#project-structure)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
+- [Video Demo of Application](#https://drive.google.com/file/d/1j0wyd_l9rneP3_WeAlbFCNICkzAn_rQv/view?usp=sharing)
 
 ## ✨ Features
 
